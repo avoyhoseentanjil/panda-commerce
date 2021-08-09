@@ -21,6 +21,7 @@
     cursor: pointer;
 }
 .cat1, .cat2, .cat3{
+    margin-top: 5px;
     padding: 10px 30px;
     border-radius: 10px;
 }

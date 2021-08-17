@@ -55,3 +55,17 @@
 footer{
     text-align: center;
 }
+.card-img{
+  position: relative;
+  align-self: center;
+    
+    
+    width: 75%;
+    transition: .5s;
+    overflow: hidden;
+}
+.card-img:hover {
+    transform: scale(1.3);
+    
+    
+}

@@ -216,6 +216,33 @@
   <button class="buy-now-button">SUBMIT</button>
 </div>
 </div>
+                                <!------view count code ------>
+<div>
+<section>
+ <?php
+
+// Connect to the database
+$host = "hostname";
+$user = "username";
+$password = "password";
+$dbname = "database_name";
+$conn = mysqli_connect($host, $user, $password, $dbname);
+
+// Get the post ID from the URL
+$post_id = $_GET['post_id'];
+
+// Increment the view count for the post
+$sql = "UPDATE posts SET views = views + 1 WHERE id = $post_id";
+$result = mysqli_query($conn, $sql);
+
+// Close the connection
+mysqli_close($conn);
+
+?>
+
+</section>
+</div>
+                                                               
 <footer>
   <p class="align-items-center">©panda commerce ,all rights are reserved by Tanju 🌸
     ,Dhaka</p>
